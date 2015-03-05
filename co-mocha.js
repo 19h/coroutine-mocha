@@ -1,4 +1,4 @@
-var co      = require('co');
+var Promise      = require('bluebird');
 var path    = require('path');
 var isGenFn = require('is-generator').fn;
 
@@ -23,7 +23,7 @@ var coMocha = module.exports = function (mocha) {
    */
   Runnable.prototype.run = function (fn) {
     if (isGenFn(this.fn)) {
-      this.fn = co.wrap(this.fn);
+      this.fn = Promise.coroutine(this.fn);
     }
 
     return run.call(this, fn);
