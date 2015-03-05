@@ -1,5 +1,5 @@
 {
-  "name": "co-mocha",
+  "name": "coroutine-mocha",
   "version": "1.1.0",
   "description": "Enable support for generators in Mocha tests",
   "main": "co-mocha.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/blakeembrey/co-mocha.git"
+    "url": "git://github.com/kenansulayman/coroutine-mocha.git"
   },
   "keywords": [
     "co",
@@ -17,24 +17,23 @@
     "generators"
   ],
   "author": {
-    "name": "Blake Embrey",
-    "email": "hello@blakeembrey.com",
-    "url": "http://blakeembrey.me"
+    "name": "Kenan Sulayman",
+    "email": "kenan@sly.mn",
+    "url": "http://sly.mn"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/blakeembrey/co-mocha/issues"
+    "url": "https://github.com/KenanSulayman/coroutine-mocha/issues"
   },
-  "homepage": "https://github.com/blakeembrey/co-mocha",
+  "homepage": "https://github.com/kenansulayman/coroutine-mocha",
   "devDependencies": {
-    "bluebird": "^2.3.11",
     "istanbul": "git://github.com/gotwarlost/istanbul#harmony",
     "mocha": "^2.0.1",
     "regenerator": "^0.8.0",
     "traceur": "0.0.79"
   },
   "dependencies": {
-    "co": "^4.0.0",
+    "bluebird": "*",
     "is-generator": "^1.0.0"
   },
   "peerDependencies": {
